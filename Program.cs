@@ -15,20 +15,20 @@ namespace CSC150_1001_Loops_wsc
         static void Main(string[] args)
         {
             int num;
-            char response = 'y';
+            char response = 'y';                                // start value
 
-            while (response == 'y')
+            while (response == 'y')                             // stop value
             {
                 Write("Enter a number: ");
                 num = Convert.ToInt32(ReadLine());
 
-                for (int x = 1; x <= num; x++)
+                for (int x = 1; x <= num; x++)                  // (start, stop, change) values
                 {
                     Write("*");
                 }
                 WriteLine();
 
-                Write("Do you want to continue (y/n)? ");
+                Write("Do you want to continue (y/n)? ");       // change value
                 response = Convert.ToChar(ReadLine());
             }
 
